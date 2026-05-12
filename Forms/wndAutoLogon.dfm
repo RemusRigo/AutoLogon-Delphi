@@ -1,10 +1,11 @@
 object frmAutoLogon: TfrmAutoLogon
   Left = 0
   Top = 0
+  BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 'AutoLogon'
-  ClientHeight = 199
-  ClientWidth = 346
+  Caption = 'AutoLogon '#169' 2026 Remus Rigo'
+  ClientHeight = 191
+  ClientWidth = 340
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -314,21 +315,25 @@ object frmAutoLogon: TfrmAutoLogon
     527FFFFF0000FE8485FFFFFF0000FFD02FFFFFFF0000FFFFFFFFFFFF0000FFFF
     FFFFFFFF0000FFFFFFFFFFFF0000FFFFFFFFFFFF0000FFFFFFFFFFFF0000FFFF
     FFFFFFFF0000FFFFFFFFFFFF0000FFFFFFFFFFFF0000FFFFFFFFFFFF0000}
-  Position = poDesigned
+  Position = poScreenCenter
+  OnCreate = FormCreate
   TextHeight = 15
-  object CheckBox1: TCheckBox
-    Left = 0
-    Top = 2
+  object chkBoxAutoLogon: TCheckBox
+    AlignWithMargins = True
+    Left = 3
+    Top = 0
     Width = 121
     Height = 17
     Caption = 'Enable AutoLogon'
     TabOrder = 0
+    OnClick = chkBoxAutoLogonClick
   end
   object grpBoxOptions: TGroupBox
-    Left = 0
-    Top = 22
-    Width = 345
-    Height = 174
+    AlignWithMargins = True
+    Left = 2
+    Top = 20
+    Width = 337
+    Height = 170
     Caption = 'Options'
     TabOrder = 1
     object lblUserName: TLabel
@@ -344,6 +349,7 @@ object frmAutoLogon: TfrmAutoLogon
       Width = 50
       Height = 15
       Caption = 'Password'
+      OnClick = lblPasswordClick
     end
     object lblDomain: TLabel
       Left = 11
@@ -355,7 +361,7 @@ object frmAutoLogon: TfrmAutoLogon
     object rGroupType: TRadioGroup
       Left = 3
       Top = 16
-      Width = 338
+      Width = 330
       Height = 40
       Caption = 'Account Type'
       Columns = 3
@@ -364,51 +370,56 @@ object frmAutoLogon: TfrmAutoLogon
         '&Microsoft'
         '&Domain')
       TabOrder = 0
+      OnClick = rGroupTypeClick
     end
     object edUserName: TEdit
       Left = 90
       Top = 62
-      Width = 250
+      Width = 240
       Height = 23
       TabOrder = 1
     end
     object edPassword: TEdit
       Left = 90
       Top = 87
-      Width = 250
+      Width = 240
       Height = 23
+      PasswordChar = '*'
       TabOrder = 2
     end
     object edDomain: TEdit
       Left = 90
       Top = 112
-      Width = 250
+      Width = 240
       Height = 23
       TabOrder = 3
     end
     object btnRead: TButton
-      Left = 186
+      Left = 179
       Top = 141
       Width = 45
       Height = 25
       Caption = '&Read'
       TabOrder = 4
+      OnClick = btnReadClick
     end
     object btnDelete: TButton
-      Left = 237
+      Left = 230
       Top = 141
       Width = 45
       Height = 25
       Caption = '&Delete'
       TabOrder = 5
+      OnClick = btnDeleteClick
     end
     object btnSet: TButton
-      Left = 288
+      Left = 281
       Top = 141
       Width = 45
       Height = 25
       Caption = '&Set'
       TabOrder = 6
+      OnClick = btnSetClick
     end
   end
 end

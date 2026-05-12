@@ -30,6 +30,9 @@ Just run AutoLogon.exe
 
 ## Roadmap
 
+* 2026-05-11: Fix: ReadPassword returned empty string
+* 2026-05-10: Fix: Re-written LSA routines
+* 2026-05-09: Add: Application manifest: Requested Privileges: Require Administrator 
 * 2026-05-08: ICO: easypass by Papirus Development Team https://icon-icons.com/icon/easypass/94927
 * 2026-05-08: Project started \[Delphi version]
 
