@@ -2,20 +2,26 @@
 
 A Windows AutoLogon utility
 
-## 
+
 
 ## Authors
 
 * [@remusrigo](https://github.com/RemusRigo)
 * [@remusrigo](https://sourceforge.net/u/remusrigo/profile)
 
-## 
+
 
 ## Installation
 
 Just run AutoLogon.exe
 
-## 
+
+
+## Statistics
+
+![GitHub Downloads (specific asset, all releases)](https://img.shields.io/github/downloads/RemusRigo/AutoLogon-Delphi/AutoLogon-v1.1.zip)
+
+
 
 ## Features
 
@@ -38,6 +44,3 @@ Just run AutoLogon.exe
 * 2026-05-09: Add: Application manifest: Requested Privileges: Require Administrator
 * 2026-05-08: ICO: easypass by Papirus Development Team https://icon-icons.com/icon/easypass/94927
 * 2026-05-08: Project started \[Delphi version]
-
-## 
-
