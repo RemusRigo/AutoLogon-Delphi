@@ -17,12 +17,6 @@ Just run AutoLogon.exe
 
 
 
-## Statistics
-
-![GitHub Downloads (specific asset, all releases)](https://img.shields.io/github/downloads/RemusRigo/AutoLogon-Delphi/AutoLogon-v1.1.zip)
-
-
-
 ## Features
 
 * Start with admin rights
@@ -33,7 +27,13 @@ Just run AutoLogon.exe
 * Right-Click on Caption to show About dialog box
 * Used/unused controls are added/removed on Run-Time
 
-## 
+
+
+## Statistics
+
+![GitHub Downloads (specific asset, all releases)](https://img.shields.io/github/downloads/RemusRigo/AutoLogon-Delphi/AutoLogon-v1.1.zip)
+
+
 
 ## Roadmap
 
