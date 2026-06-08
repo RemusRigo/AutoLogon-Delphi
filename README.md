@@ -35,7 +35,6 @@ Just run AutoLogon.exe
 
 
 
-
 ## Roadmap
 
 * 2026-05-12: Fix: About form
