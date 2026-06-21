@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{82EAA548-3F99-47CD-B522-E715FD43C1AE}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="AutoLogon.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="AutoLogon">
+        <MSBuild Projects="AutoLogon.dproj"/>
+    </Target>
+    <Target Name="AutoLogon:Clean">
+        <MSBuild Projects="AutoLogon.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AutoLogon:Make">
+        <MSBuild Projects="AutoLogon.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="AutoLogon"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="AutoLogon:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="AutoLogon:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
