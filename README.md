@@ -31,6 +31,8 @@ Just run AutoLogon.exe
 
 ## Statistics
 
+![status](https://img.shields.io/badge/status-completed-brightgreen)
+<br>
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/RemusRigo/AutoLogon-Delphi/total)
 
 
