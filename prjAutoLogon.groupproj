@@ -3,7 +3,7 @@
         <ProjectGuid>{82EAA548-3F99-47CD-B522-E715FD43C1AE}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
-        <Projects Include="AutoLogon.dproj">
+        <Projects Include="AutoLogon\AutoLogon.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -15,13 +15,13 @@
         </BorlandProject>
     </ProjectExtensions>
     <Target Name="AutoLogon">
-        <MSBuild Projects="AutoLogon.dproj"/>
+        <MSBuild Projects="AutoLogon\AutoLogon.dproj"/>
     </Target>
     <Target Name="AutoLogon:Clean">
-        <MSBuild Projects="AutoLogon.dproj" Targets="Clean"/>
+        <MSBuild Projects="AutoLogon\AutoLogon.dproj" Targets="Clean"/>
     </Target>
     <Target Name="AutoLogon:Make">
-        <MSBuild Projects="AutoLogon.dproj" Targets="Make"/>
+        <MSBuild Projects="AutoLogon\AutoLogon.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
         <CallTarget Targets="AutoLogon"/>
